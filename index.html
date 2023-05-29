@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are Not Alone</title>
+
+  <style>
+    * {
+      margin: 0 auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+      background-color:  #f1f1f1;
+      background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+      /*background-image: url('serene.jpg');*/
+      background-repeat: no-repeat;
+      background-size: cover;  
+             
+    }
+    .container {
+      display: block;
+      }
+
+    h1 {
+      font-size: 50px;
+      /*color: black ;*/
+      color: white;
+      text-align: center;
+      padding: 20px;
+     /*text-decoration: underline;*/
+    }
+
+    img {
+      text-align: center;
+      padding: 0;
+      display: block;
+      width: 300px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px double black;
+      }
+    
+    h2 {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      padding: 10px;
+      }
+
+    p {
+      font-size: 18px;
+      padding: 10px;
+      }
+
+    a {
+      text-decoration-line: underline;
+      color: red;
+      margin-left: 10px;     
+    }
+
+    a:hover {
+      opacity: .7;
+      transition: 4ms ease-in;
+    }
+
+    button {
+      background-color: #7c56dd;
+      color: white;
+      padding: 30px 20px;
+      display: block;
+      border-radius: 30px;
+      font-size: 24px;
+      border: 1px solid black;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 5px 5px 5px gray;     
+    }
+
+    button:hover {
+      opacity: .7;
+      transition: 4ms ease-in;
+    }
+
+    span {
+      color: red;
+    }
+
+    footer {
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class = container>
+    <h1>🙏🏽You Are Not Alone🙏🏽</h1>
+    <img src="iStock.jpg" alt= Sick loved one;
+    width="200";/>
+
+    <h2>Caring for a dying loved one can be emotionally challenging, 
+      but there are ways to cope and provide the best possible support 
+      during this difficult time. </h2> <hr>
+     
+      <p>Remember, everyone's journey is unique, and there is no right or wrong way to 
+      cope with caring for a dying loved one. Give yourself permission to feel and grieve, 
+      and be compassionate with yourself throughout the process.</p>
+
+      <a href="https://www.griefcounselor.org/" target="_blank">
+      <strong>Seek professional help if needed</strong>  </a>
+
+      <p>If <span>YOU</span> find yourself overwhelmed, unable to cope, or experiencing symptoms of depression or anxiety, 
+      it's important to seek professional help. A mental health professional 
+      can provide guidance, support, and coping strategies tailored to your 
+      specific needs.</p>
+     
+    <button>Prayer Request</button>
+
+    <footer><em><strong>Coded by MariatheTech</strong></em></footer>
+  
+  </div>
+  <script>
+    function prayerRequest() {
+      let firstName = prompt('Enter first name');
+      let request = prompt('Enter request');
+      if (firstName && request) {
+        let h1 = document.querySelector('h1');
+        h1.innerHTML = "😊" + " Hi, " + firstName + "!" + " Your request for prayer has been received."
+      } else {
+        let h1 = document.querySelector('h1');
+        h1.innerHTML = "😒" + " Please try again"
+      }
+    }
+    //alert('HELLO')//
+    let contactButton = document.querySelector('button');
+    contactButton.addEventListener('click', prayerRequest);
+
+  </script>
+</body>
+</html>
